@@ -1,0 +1,84 @@
+# ---------------------------------
+# Secrets and environment variables
+# ---------------------------------
+.env
+.env.*
+!.env.example
+
+# Local AWS credentials
+.aws/
+
+# Private keys and certificates
+*.pem
+*.key
+
+# ---------------------------------
+# Python bytecode and environments
+# ---------------------------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+ENV/
+
+# Python build / package artifacts
+build/
+dist/
+*.egg-info/
+
+# ---------------------------------
+# Testing and tool caches
+# ---------------------------------
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+
+# ---------------------------------
+# Airflow runtime files
+# ---------------------------------
+/logs/*
+!/logs/.gitkeep
+
+airflow.db
+airflow.db-*
+airflow.cfg
+airflow-webserver.pid
+webserver_config.py
+
+# ---------------------------------
+# Local datasets and generated output
+# ---------------------------------
+/data/*
+!/data/.gitkeep
+!/data/README.md
+
+# Local database files
+*.db
+*.sqlite
+*.sqlite3
+
+# ---------------------------------
+# Jupyter temporary files
+# ---------------------------------
+.ipynb_checkpoints/
+
+# ---------------------------------
+# IDE and operating system files
+# ---------------------------------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ---------------------------------
+# Temporary files
+# ---------------------------------
+*.log
+*.tmp
+*.swp
+*~
